@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/hero-background.jpg')",        
+        'hero-pattern': "url('/src/assets/hero.svg')",        
       },
       fontFamily: {
         sans: [ "Roboto", "sans-serif" ]
