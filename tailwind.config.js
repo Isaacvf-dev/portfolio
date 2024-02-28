@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/hero.svg')",        
+        'hero-pattern': "linear-gradient(180deg, rgba(23, 2, 80, .1) 0%, rgba(23, 2, 80, .2) 50%, rgb(46 16 101) 100%),url('/src/assets/hero.svg')",        
       },
       fontFamily: {
         sans: [ "Roboto", "sans-serif" ]
