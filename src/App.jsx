@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import About from "./components/About"
+import Menu from "./components/utilities/Menu"
 
 function App() {
   React.useEffect(() => {
@@ -21,7 +22,7 @@ function App() {
       <main>
         <About />
       </main>
-      
+      <Menu />
     </>
   )
 }
