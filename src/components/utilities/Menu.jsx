@@ -20,7 +20,7 @@ export default function Menu() {
     onMouseLeave={() => setIsOpen(false)}  >
       <button
         onClick={toggleMenu}           
-        className={`p-3 bg-violet-500 rounded-full text-white focus:outline-none focus:ring focus:ring-violet-300 transition-all duration-300 transform hover:rotate-45 ${isOpen ? "rotate-45" : ""}`}        
+        className={`p-3 bg-violet-500 rounded-full shadow-md text-white focus:outline-none focus:ring focus:ring-violet-300 transition-all duration-300 transform hover:rotate-45 ${isOpen ? "rotate-45" : ""}`}        
       >
         {isOpen ? <X size={24} className="pointer-events-none"/> : <List size={24} className="pointer-events-none"/>}
         
