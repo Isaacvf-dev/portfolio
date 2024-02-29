@@ -64,7 +64,7 @@ export default function Tech() {
           className="font-bold text-amber-400 text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-8"
           data-aos="fade-up"
         >
-          Tech I use
+          Technologies I use
         </h3> 
     
       </div> 

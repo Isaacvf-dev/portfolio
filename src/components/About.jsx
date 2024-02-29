@@ -8,7 +8,7 @@ export default function About() {
       
     >
       <div className="w-[300px] h-[300px] rounded-full overflow-hidden">
-        <img src='/src/assets/hero.svg' alt="Myself"  className="h-full object-cover  "/>
+        <img src='/src/assets/avatar.png' alt="Myself"  className="object-cover  "/>
       </div>
       <div className="text-center lg:text-left max-w-xl">
         <h3 
@@ -28,7 +28,7 @@ export default function About() {
           className="text-white"
           data-aos="fade-up"
         >
-            I'm particularly driven by the challenge of problem-solving and making an impact in the tech industry. I'm pretty good at logical thinking and enjoy diving into complex problems, which is why I find coding to be incredibly rewarding. Let's collaborate on building something remarkable and contribute to making the internet a better place through awesome apps
+            I'm particularly driven by the challenge of problem-solving and making an impact in the tech industry. I'm pretty good at logical thinking and enjoy diving into complex problems, which is why I find coding to be incredibly rewarding. Let's collaborate on building something remarkable and contribute to making the internet a better place through awesome apps!
         </p>
         
         
