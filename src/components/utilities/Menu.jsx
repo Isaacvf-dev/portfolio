@@ -11,7 +11,7 @@ export default function Menu() {
   const actions = [
     {icon: EnvelopeSimple, name:'contact', sectionId: "#About" },    
     {icon: Palette , name: 'projects', sectionId: "#About"},
-    {icon: Robot, name: 'tech', sectionId: "#About"},
+    {icon: Robot, name: 'tech', sectionId: "#Tech"},
     {icon: UserCircle, name: 'about', sectionId: "#About"},
   ]
 

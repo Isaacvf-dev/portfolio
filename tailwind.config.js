@@ -8,6 +8,11 @@ export default {
     extend: {
       backgroundImage: {
         'hero-pattern': "linear-gradient(180deg, rgba(23, 2, 80, .1) 0%, rgba(23, 2, 80, .2) 50%, rgb(46 16 101) 100%),url('/src/assets/hero.svg')",        
+        'tech-pattern': [
+          "linear-gradient(180deg, rgba(23, 2, 80, .1) 0%, rgba(23, 2, 80, .2) 50%, rgb(46 16 101) 100%)",
+          "linear-gradient(360deg, rgba(23, 2, 80, .2) 0%, rgba(23, 2, 80, .2) 20%, rgba(23, 2, 80, .1) 40%, rgba(23, 2, 80, .1) 80%, rgb(46 16 101) 100%)",
+          "url('/src/assets/tech.svg')"
+        ]       
       },
       fontFamily: {
         sans: [ "Roboto", "sans-serif" ]
