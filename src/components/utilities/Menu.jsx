@@ -16,7 +16,7 @@ export default function Menu() {
   ]
 
   return (
-    <div className="fixed flex flex-col-reverse bottom-4 right-4" onMouseEnter={() => setIsOpen(true)}
+    <div className="fixed flex z-10 flex-col-reverse bottom-4 right-4" onMouseEnter={() => setIsOpen(true)}
     onMouseLeave={() => setIsOpen(false)}  >
       <button
         onClick={toggleMenu}           

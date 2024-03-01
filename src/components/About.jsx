@@ -4,10 +4,10 @@ export default function About() {
   return (
     <section
       id="About" 
-      className="bg-violet-950 flex flex-col  lg:flex-row items-center justify-center p-4 md:p-8 lg:p-12 md:gap-16 min-h-svh"
+      className="bg-violet-950 flex flex-col  lg:flex-row items-center justify-center p-4 md:p-8 lg:p-12 gap-16 min-h-svh"
       
     >
-      <div className="w-[300px] h-[300px] rounded-full overflow-hidden">
+      <div className="w-[200px] md:w-[300px] h-[200px] md:h-[300px] rounded-full overflow-hidden">
         <img src='/src/assets/avatar.png' alt="Myself"  className="object-cover  "/>
       </div>
       <div className="text-center lg:text-left max-w-xl">

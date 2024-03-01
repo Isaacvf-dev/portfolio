@@ -1,53 +1,5 @@
 import React from "react";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiVuedotjs , SiTailwindcss, SiFigma, SiGit, SiNpm, SiVisualstudiocode, SiNetlify } from "react-icons/si";
-
-
-const stackData = [
-  {
-    name: 'HTML',
-    icon: SiHtml5,
-  },
-  {
-    name: 'CSS',
-    icon: SiCss3,
-  },
-  {
-    name: 'JavaScript',
-    icon: SiJavascript,
-  },
-  {
-    name: 'React',
-    icon: SiReact,
-  },
-  {
-    name: 'Vue',
-    icon: SiVuedotjs,
-  },
-  {
-    name: 'Tailwindcss',
-    icon: SiTailwindcss,
-  },  
-  {
-    name: 'Figma',
-    icon: SiFigma,
-  },
-  {
-    name: 'Git',
-    icon: SiGit,
-  },
-  {
-    name: 'npm',
-    icon: SiNpm,
-  },
-  {
-    name: 'VSCode',
-    icon: SiVisualstudiocode,
-  },
-  {
-    name: 'Netlify',
-    icon: SiNetlify,
-  },
-];
+import { stacksData } from "./StacksData";
 
 export default function Tech() {
   const backgroundStyle = {
@@ -68,11 +20,11 @@ export default function Tech() {
         </h3> 
     
       </div> 
-      <div className="flex flex-wrap gap-4 lg:gap-12 justify-center py-8 px-4 max-w-5xl">
-        {stackData.map(stack => (
+      <div className="flex flex-wrap gap-4 lg:gap-10 justify-center py-8 px-4 max-w-5xl">
+        {stacksData.map(stack => (
           <div 
             key={stack.name}
-            className="flex flex-col items-center justify-center p-4 bg-violet-500 rounded-xl min-w-24"
+            className="flex flex-col items-center justify-center p-4 bg-violet-500 rounded-xl w-24"
             data-aos="fade-up"
           >
             <stack.icon size={32}/>
