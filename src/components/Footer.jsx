@@ -24,14 +24,15 @@ export default function Footer() {
     <footer className="text-slate-50 text-center bg-violet-900 m-auto">
       <div className="m-auto flex flex-col md:flex-row items-center gap-4 justify-around py-6 px-4 max-w-[600px]">
         <p>Designed and coded with <span className="text-amber-400">♥</span> by Isaac Vieira</p>
-        <div className=" flex gap-4">
+        <div className="flex gap-4">
           {socials.map( socialButton => (
             <a 
               key={socialButton.name}
               href={socialButton.url}
               target="_blank"
+              className="p-2 rounded-full bg-transparent border-1 border-amber-400 transition duration-300 ease-in-out hover:bg-amber-400/5"
             >
-              <socialButton.icon size={18}/>
+              <socialButton.icon size={14}/>
             </a>
             
           ) )}

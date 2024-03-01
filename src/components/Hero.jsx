@@ -1,6 +1,6 @@
 import React from "react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
+import { Link } from "react-scroll";
 
 export default function Hero() {
   const backgroundStyle = {
@@ -27,14 +27,19 @@ export default function Hero() {
           Front-End Developer
         </h2>
       </div>
-      <a 
-        className="absolute bottom-5 motion-safe:animate-bounce text-amber-400 hover:animate-none" 
-        href="#About"
+      <Link        
+        to='about'
+        spy={true} 
+        smooth={true} 
+        offset={0} 
+        duration={500} 
+        className="absolute bottom-5 motion-safe:animate-bounce text-amber-400 hover:animate-none cursor-pointer" 
+        
       >        
         <div className="p-1 rounded-full bg-transparent border-1 border-amber-400 transition duration-300 ease-in-out hover:bg-amber-400/5">
           <MdKeyboardDoubleArrowDown size={32} />
         </div>        
-      </a>
+      </Link>
     </header>
   )
 }

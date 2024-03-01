@@ -1,6 +1,7 @@
 import React from "react";
 import { List, UserCircle , Robot, EnvelopeSimple, Palette, X  } from "@phosphor-icons/react";
 import { Link } from "react-scroll"
+
 export default function Menu() {
   const [isOpen, setIsOpen] = React.useState(false)
   
