@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiVuedotjs , SiTailwindcss, SiFigma, SiGit, SiNpm, SiVisualstudiocode, SiNetlify, SiNuxtdotjs } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiVuedotjs , SiTailwindcss, SiFigma, SiGit, SiNpm, SiVisualstudiocode, SiNetlify, SiNuxtdotjs, SiBootstrap  } from "react-icons/si";
 
 export const stacksData = [
   {
@@ -28,6 +28,10 @@ export const stacksData = [
   {
     name: 'Tailwindcss',
     icon: SiTailwindcss,
+  },  
+  {
+    name: 'Bootstrap',
+    icon: SiBootstrap ,
   },  
   {
     name: 'Figma',

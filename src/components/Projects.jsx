@@ -1,8 +1,15 @@
 import React from "react";
 import { projectsData } from "./ProjectsData";
+import { stacksData } from "./StacksData";
 
 export default function Projects() {
+  const findStack = (tagName) => {
+    return stacksData.find(stack => stack.name === tagName);
+  }
+
   const projects = projectsData.map(project => {
+    const projectStacks = project.tags.map(tag => findStack(tag)).filter(Boolean)
+
     return (
       <div 
         className="max-w-[300px] bg-violet-900 border border-violet-900 rounded-lg shadow flex flex-col text-slate-50"
@@ -18,14 +25,17 @@ export default function Projects() {
               {project.title}
             </h5>
           </a>
-          <p className="mb-3 font-normal text-sm">
+          <p className="mb-4 font-normal text-sm">
             {project.description}
-          </p>          
+          </p>
+          <div className="flex flex-wrap gap-2 text-amber-400">
+            {projectStacks.map(stack => (
+              <stack.icon size={16} key={stack.icon} title={stack.name}/>
+            ))}
+          </div>          
         </div>
-        <div className="flex flex-wrap">
-
-        </div>
-        <div className="p-4 mt-auto">
+        
+        <div className="px-4 pb-4 mt-auto">
             <a 
               href={project.code}
               target="_blank" 
