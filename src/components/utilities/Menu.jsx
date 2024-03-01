@@ -32,6 +32,7 @@ export default function Menu() {
             <a
               key={action.name}
               href={action.sectionId}
+              title={action.name}
               className="text-white p-2 bg-violet-700 opacity-75 hover:bg-violet-500 rounded-full focus:outline-none focus:ring focus:ring-violet-500 animate-slide-in"              
             >
               <action.icon size={24} />
