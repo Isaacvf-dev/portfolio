@@ -43,7 +43,7 @@ export default function Projects() {
   })
   return (
     <section
-      id="Tech"
+      id="Projects"
       className="bg-violet-950 flex flex-col items-center justify-center p-4 md:p-8 lg:p-12 md:gap-16 min-h-svh"
     >
      <h3

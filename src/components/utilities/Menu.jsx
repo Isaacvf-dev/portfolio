@@ -9,8 +9,8 @@ export default function Menu() {
   }
 
   const actions = [
-    {icon: EnvelopeSimple, name:'contact', sectionId: "#About" },    
-    {icon: Palette , name: 'projects', sectionId: "#About"},
+    {icon: EnvelopeSimple, name:'contact', sectionId: "#Contact" },    
+    {icon: Palette , name: 'projects', sectionId: "#Projects"},
     {icon: Robot, name: 'tech', sectionId: "#Tech"},
     {icon: UserCircle, name: 'about', sectionId: "#About"},
   ]
