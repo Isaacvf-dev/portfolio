@@ -8,7 +8,7 @@ export default function About() {
       
     >
       <div className="w-[200px] md:w-[300px] h-[200px] md:h-[300px] rounded-full overflow-hidden">
-        <img src='/src/assets/avatar.png' alt="Myself"  className="object-cover  "/>
+        <img src='/assets/Avatar.png' alt="Myself"  className="object-cover  "/>
       </div>
       <div className="text-center lg:text-left max-w-xl">
         <h3 

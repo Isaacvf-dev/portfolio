@@ -3,7 +3,7 @@ import { stacksData } from "./StacksData";
 
 export default function Tech() {
   const backgroundStyle = {
-    background: "linear-gradient(rgb(46, 16, 101) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%) 0% 0% / cover, url('/src/assets/tech.svg')",    
+    background: "linear-gradient(rgb(46, 16, 101) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%) 0% 0% / cover, url('/assets/tech.svg')",    
   };
   return (
     <section

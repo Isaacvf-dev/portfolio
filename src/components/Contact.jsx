@@ -6,7 +6,7 @@ export default function Contact() {
   const form = React.useRef()
 
   const backgroundStyle = {
-    background: "linear-gradient(rgb(46, 16, 101) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%) 0% 0% / cover, url('/src/assets/contact.svg') center",    
+    background: "linear-gradient(rgb(46, 16, 101) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%) 0% 0% / cover, url('/assets/contact.svg') center",    
   }
   
   const sendEmail = (e) => {
