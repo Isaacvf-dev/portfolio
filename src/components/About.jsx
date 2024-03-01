@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <section
-      id="About" 
+      id="about" 
       className="bg-violet-950 flex flex-col  lg:flex-row items-center justify-center p-4 md:p-8 lg:p-12 gap-16 min-h-svh"
       
     >

@@ -7,7 +7,7 @@ export default function Tech() {
   };
   return (
     <section
-      id="Tech"
+      id="tech"
       style={backgroundStyle}
       className="min-h-svh bg-cover bg-no-repeat bg-center bg-fixed p-4 md:p-8 lg:p-12 flex flex-col justify-center items-center text-slate-50 text-center"
     >

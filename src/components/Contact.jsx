@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section
       style={backgroundStyle}
-      id="Contact"
+      id="contact"
       className="bg-contact-pattern h-svh bg-no-repeat bg-fixed p-12 flex flex-col justify-center items-center text-slate-50 text-center"
     >
      <h3
