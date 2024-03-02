@@ -59,7 +59,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Phosphor Icons](https://phosphoricons.com/) - Menu icons
 - [React Icons](https://react-icons.github.io/react-icons/) - Page and footer icons
 - [EmailJS](https://www.emailjs.com/) - Send Email Directly From Your Code
-- 
+- [Tailwindcss](https://tailwindcss.com/docs/installation) -  Utility-first CSS framework
 
 
 ## Author
