@@ -4,6 +4,7 @@ import FormData from "./FormData";
 
 export default function Contact() {
   const form = React.useRef()
+  const [showSuccessMessage, setShowSuccessMessage] = React.useState(false);
 
   const backgroundStyle = {
     background: "linear-gradient(rgb(46, 16, 101) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%) 0% 0% / cover, url('/assets/contact.svg') center",    
@@ -18,14 +19,14 @@ export default function Contact() {
       })
       .then(
         () => {
-          alert('Thanks for the message!')
+          setShowSuccessMessage(true);
+          e.target.reset()
         },
         (error) => {
           alert('Oops, something went wrong!')
         },
-      );
+      );      
       
-      e.target.reset()
   };
 
   return (
@@ -42,16 +43,20 @@ export default function Contact() {
     </h3>
     <form 
       ref={form} 
-      className="max-w-[600px] w-full flex flex-col gap-2"
+      className="max-w-[600px] w-full flex flex-col gap-2 group"
       onSubmit={sendEmail}
+      
     > 
       <FormData />      
       <button 
         type="submit" 
-        className="bg-amber-400 hover:bg-amber-500 shadow-md rounded-md py-1 text-violet-950 text-sm font-medium -mt-8"
+        className="bg-amber-400 hover:bg-amber-500 shadow-md rounded-md py-1 text-violet-950 text-sm font-medium -mt-8 "
       >
         SEND MESSAGE
-      </button>      
+      </button>
+      {showSuccessMessage && (
+        <p className="text-green-500">Thanks for the message!</p>
+      )}      
     </form> 
 
     </section>

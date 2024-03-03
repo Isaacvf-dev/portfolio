@@ -7,7 +7,7 @@ const inputLabelData = [
 ]
 
 export default function FormData() {
-  const inputClass = "block py-2.5 px-2 w-full text-sm text-slate-50 bg-gray-500/15 border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-amber-400 peer resize-none"
+  const inputClass = "block py-2.5 px-2 w-full text-sm text-slate-50 bg-gray-500/35 border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-amber-400 peer resize-none "
 
   const labelClass = "peer-focus:font-medium absolute text-sm pl-2 peer-focus:pl-0 text-gray-300 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-amber-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
 
@@ -21,11 +21,15 @@ export default function FormData() {
             id={data.name} 
             className={inputClass} 
             placeholder=" " 
-            required 
-          />
+            required                       
+          />          
+          
           <label htmlFor={data.name} className={labelClass}>
             {data.placeholder}
           </label>
+          <span className="mt-2 text-sm text-amber-400 invisible peer-invalid:visible">
+            This field is required!
+          </span>
         </div> 
       ))}
       <div className="relative z-0 w-full mb-5 group">
@@ -34,12 +38,16 @@ export default function FormData() {
           id="message" 
           placeholder="" 
           className={inputClass}
+          required
           rows={6}
         >          
         </textarea>
         <label htmlFor="message" className={labelClass}>
             Message*
         </label>
+        <span className="mt-2 text-sm text-amber-400 invisible peer-invalid:visible">
+            This field is required!
+        </span>
       </div>
       
     </div>
