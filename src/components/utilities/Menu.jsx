@@ -36,11 +36,13 @@ export default function Menu() {
               spy={true} 
               smooth={true} 
               offset={0} 
-              duration={500}
-              title={action.name}
-              className="text-white p-2 bg-violet-700 opacity-75 hover:bg-violet-500 rounded-full focus:outline-none focus:ring focus:ring-violet-500 animate-slide-in cursor-pointer"              
+              duration={500}              
+              className="text-white p-2 bg-violet-700 opacity-75 hover:bg-violet-500 rounded-full focus:outline-none focus:ring focus:ring-violet-500 animate-slide-in cursor-pointer relative group"              
             >
               <action.icon size={24} />
+              <span className="absolute w-auto p-2 m-2 -top-1 min-w-max right-10 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all scale-0 duration-100 origin-right group-hover:scale-100">
+                {action.name}
+              </span>
             </Link>
           ))}
         
