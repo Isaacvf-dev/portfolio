@@ -6,7 +6,7 @@ export const projectsData = [
     tags: ['HTML', 'CSS', 'Tailwindcss', 'JavaScript', 'React'],
     image: '/assets/portfolio.png',
     code: 'https://github.com/Isaacvf-dev/portfolio',
-    live: 'https://github.com/Isaacvf-dev/portfolio',
+    live: 'https://isaac-vieira.netlify.app/',
   },
   {
     id: 2,
