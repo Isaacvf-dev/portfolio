@@ -41,16 +41,5 @@ export const stacksData = [
     name: 'Git',
     icon: SiGit,
   },
-  {
-    name: 'npm',
-    icon: SiNpm,
-  },
-  {
-    name: 'VSCode',
-    icon: SiVisualstudiocode,
-  },
-  {
-    name: 'Netlify',
-    icon: SiNetlify,
-  },
+  
 ];
