@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export default function Hero() {
   const backgroundStyle = {
-    background: "linear-gradient(rgba(46, 16, 101, 0.1) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%) 0% 0% / cover scroll, url('/assets/hero.svg') center no-repeat fixed",    
+    background: "linear-gradient(rgba(46, 16, 101, 0.1) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%)",    
   };
 
   return (
@@ -12,7 +12,8 @@ export default function Hero() {
       style={backgroundStyle} 
       className="h-svh p-12 flex flex-col justify-center items-center text-slate-50 text-center relative"
     >
-      <div>        
+      <img src="/assets/hero.svg" loading="eager" className="fixed w-full h-full top-0 -z-10 object-cover" />
+      <div>               
         <h1 
           data-aos="fade-right" 
           className="text-7xl md:text-8xl lg:text-9xl font-['Lora'] [text-shadow:_0.08em_0.08em_0px_rgb(4_30_96_/_45%)] "
