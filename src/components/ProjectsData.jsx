@@ -47,7 +47,7 @@ export const projectsData = [
   {
     id: 6,
     title: 'Notes',
-    description: 'Landing page for a fictional cafe with various features and responsive design.',
+    description: 'Reactjs practice, notes app with firebase. Add, delete, and other funcionalities.',
     tags: ['HTML', 'CSS', 'JavaScript', 'React'],
     image: '/assets/notes.png',
     code: 'https://github.com/Isaacvf-dev/Notes-app',
