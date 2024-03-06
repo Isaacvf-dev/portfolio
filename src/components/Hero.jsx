@@ -7,20 +7,17 @@ export default function Hero() {
   const ref = React.useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end start"],
   })
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
-  const textH1Y = useTransform(scrollYProgress, [0, 1], ["0%", "500%"])
-  const textH2Y = useTransform(scrollYProgress, [0, 1], ["0%", "600%"])
-
-  const backgroundStyle = {
-    background: "linear-gradient(rgba(46, 16, 101, 0.1) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%)",    
-  };
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "500%"])
+  
+  
 
   return (
     <header
-    ref={ref}
-      style={backgroundStyle} 
+      ref={ref}
+      style={{background: "linear-gradient(rgba(46, 16, 101, 0.1) 0%, rgba(46, 16, 101, 0.2) 50%, rgb(46, 16, 101) 100%)"}} 
       className="h-svh p-12 flex flex-col justify-center items-center text-slate-50 text-center relative"
     >
       <motion.img
@@ -29,8 +26,12 @@ export default function Hero() {
         loading="eager" 
         className="absolute w-full h-full top-0 -z-30 object-cover" 
       />
-      <img src="/assets/image-bottom.png" loading="eager" className="absolute w-full h-full top-0 -z-10 object-cover" />
-      <motion.div style={{ y: textH1Y }} className="relative -z-20 -mt-36 md:-mt-42 lg:-mt-48">               
+      <img 
+        src="/assets/image-bottom.png" 
+        loading="eager" 
+        className="absolute w-full h-full top-0 -z-10 object-cover" 
+      />
+      <motion.div style={{ y: textY }} className="relative -z-20 -mt-32 lg:-mt-42">               
         <h1
           data-aos="fade-right" 
           data-aos-delay="500"           
